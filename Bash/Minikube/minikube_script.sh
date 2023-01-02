@@ -18,5 +18,8 @@ curl -sSL https://storage.googleapis.com/kubernetes-release/release/`curl -s htt
 # Make the binary executable
 chmod +x /usr/local/bin/kubectl
 
+#You might need to use this command.
+#sudo usermod -aG docker $USER && newgrp docker
+
 # Start Minikube
 minikube start --driver=docker
